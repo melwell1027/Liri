@@ -181,8 +181,14 @@ function doWhatItSays() {
             console.log(error);
         } else {
             let dataArr = data.split(',');
-            query = dataArr[1];
-            spotifyThisSong()
+            if (dataArr[0] === 'spotify-this-song') {
+                query = dataArr[1];
+                spotifyThisSong();
+            }
+            if (dataArr[0] === 'movie-this') {
+                query = dataArr[1];
+                movieThis();
+            }
         }
     })
 }

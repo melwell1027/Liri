@@ -132,3 +132,22 @@ No Concerts Found/usr/local/Cellar/node/10.4.1/bin/node,/Users/mattelwell/Deskto
  Venue: LADY GAGA ENIGMA
  Location: Las Vegas
  Date: 01/19/2019
+/usr/local/Cellar/node/10.4.1/bin/node,/Users/mattelwell/Desktop/Liri-Bot/liri.js,do-what-it-says/usr/local/Cellar/node/10.4.1/bin/node,/Users/mattelwell/Desktop/Liri-Bot/liri.js,do-what-it-says/usr/local/Cellar/node/10.4.1/bin/node,/Users/mattelwell/Desktop/Liri-Bot/liri.js,do-what-it-says/usr/local/Cellar/node/10.4.1/bin/node,/Users/mattelwell/Desktop/Liri-Bot/liri.js,do-what-it-says/usr/local/Cellar/node/10.4.1/bin/node,/Users/mattelwell/Desktop/Liri-Bot/liri.js,do-what-it-says/usr/local/Cellar/node/10.4.1/bin/node,/Users/mattelwell/Desktop/Liri-Bot/liri.js,do-what-it-says/usr/local/Cellar/node/10.4.1/bin/node,/Users/mattelwell/Desktop/Liri-Bot/liri.js,do-what-it-says/usr/local/Cellar/node/10.4.1/bin/node,/Users/mattelwell/Desktop/Liri-Bot/liri.js,do-what-it-says/usr/local/Cellar/node/10.4.1/bin/node,/Users/mattelwell/Desktop/Liri-Bot/liri.js,do-what-it-says
+ Artist: Backstreet Boys
+ Name: I Want It That Way
+ Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=ed5804be238d42359e98b790d6653030
+ Album: The Hits--Chapter One
+/usr/local/Cellar/node/10.4.1/bin/node,/Users/mattelwell/Desktop/Liri-Bot/liri.js,do-what-it-says
+ Title: Shortbus
+ Year: 2006
+ IMDB Rating: 6.5
+ Rotten Tomatoes Rating: 67%
+ Country: USA
+ Language: English
+ Plot: A group of New Yorkers caught up in their romantic-sexual milieu converge at an underground salon infamous for its blend of art, music, politics, and carnality.
+ Actors: Paul Dawson, Lindsay Beamish, Adam Hardman, Sook-Yin Lee
+/usr/local/Cellar/node/10.4.1/bin/node,/Users/mattelwell/Desktop/Liri-Bot/liri.js,do-what-it-says
+ Artist: Backstreet Boys
+ Name: I Want It That Way
+ Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=ed5804be238d42359e98b790d6653030
+ Album: The Hits--Chapter One
