@@ -1,3 +1,5 @@
+
+
 // Hide API keys
 require("dotenv").config();
 
@@ -13,6 +15,9 @@ const spotify = new Spotify({
 
 //NPM Module to access OMDB and Bands in Town API
 let request = require("request");
+
+//NPM Module to access moment.js
+let moment = require("moment");
 
 //NPM Module to access File System
 let fs = require('fs');
@@ -71,7 +76,9 @@ function spotifyThisSong() {
                 return console.log('Error occurred: ' + err);
             } else {
                 let outputStr = "\n Artist: " + data.tracks.items[0].artists[0].name + "\n Name: " + data.tracks.items[0].name + "\n Preview: " + data.tracks.items[0].preview_url + "\n Album: " + data.tracks.items[0].album.name + "\n";
+
                 console.log(outputStr)
+
                 fs.appendFile("./log.txt", outputStr, function (err) {
                     if (err) {
                         console.log(err)
@@ -86,7 +93,9 @@ function spotifyThisSong() {
                 return console.log('Error occurred: ' + err);
             } else {
                 let outputStr = "\n Artist: " + data.tracks.items[0].artists[0].name + "\n Name: " + data.tracks.items[0].name + "\n Preview: " + data.tracks.items[0].preview_url + "\n Album: " + data.tracks.items[0].album.name + "\n";
+
                 console.log(outputStr)
+
                 fs.appendFile("./log.txt", outputStr, function (err) {
                     if (err) {
                         console.log(err)
@@ -104,7 +113,9 @@ function concertThis() {
         if (!error && response.statusCode === 200) {
             let concertArr = JSON.parse(body);
             if (concertArr.length === 0) {
+
                 console.log("No Concerts Found")
+
                 fs.appendFile("./log.txt", "\nNo Concerts Found", function (err) {
                     if (err) {
                         console.log(err)
@@ -112,8 +123,10 @@ function concertThis() {
                 })
             } else {
                 for (let i = 0; i < 5; i++) {
-                    let outputStr = "\n Venue: " + concertArr[i].venue.name + "\n Location: " + concertArr[i].venue.city + "\n Date: " + concertArr[i].datetime + "\n";
+                    let outputStr = "\n Venue: " + concertArr[i].venue.name + "\n Location: " + concertArr[i].venue.city + "\n Date: " + moment(concertArr[i].datetime).format("MM/DD/YYYY") + "\n";
+
                     console.log(outputStr);
+
                     fs.appendFile("./log.txt", outputStr, function (err) {
                         if (err) {
                             console.log(err)
@@ -133,7 +146,9 @@ function movieThis() {
         request("http://www.omdbapi.com/?t=Mr. Nobody&y=&plot=short&apikey=" + keys.apiInfo.omdbAPI, function (error, response, body) {
             if (!error && response.statusCode === 200) {
                 let outputStr = "\n Title: " + JSON.parse(body).Title + "\n Year: " + JSON.parse(body).Year + "\n IMDB Rating: " + JSON.parse(body).imdbRating + "\n Rotten Tomatoes Rating: " + JSON.parse(body).Ratings[1].Value + "\n Country: " + JSON.parse(body).Country + "\n Language: " + JSON.parse(body).Language + "\n Plot: " + JSON.parse(body).Plot + "\n Actors: " + JSON.parse(body).Actors + "\n";
+
                 console.log(outputStr);
+
                 fs.appendFile("./log.txt", outputStr, function (err) {
                     if (err) {
                         console.log(err)
@@ -145,7 +160,9 @@ function movieThis() {
         request("http://www.omdbapi.com/?t=" + query + "&y=&plot=short&apikey=" + keys.apiInfo.omdbAPI, function (error, response, body) {
             if (!error && response.statusCode === 200) {
                 let outputStr = "\n Title: " + JSON.parse(body).Title + "\n Year: " + JSON.parse(body).Year + "\n IMDB Rating: " + JSON.parse(body).imdbRating + "\n Rotten Tomatoes Rating: " + JSON.parse(body).Ratings[1].Value + "\n Country: " + JSON.parse(body).Country + "\n Language: " + JSON.parse(body).Language + "\n Plot: " + JSON.parse(body).Plot + "\n Actors: " + JSON.parse(body).Actors + "\n";
+
                 console.log(outputStr)
+
                 fs.appendFile("./log.txt", outputStr, function (err) {
                     if (err) {
                         console.log(err)
