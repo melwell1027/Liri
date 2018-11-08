@@ -92,3 +92,5 @@ spotify-this-song,"I Want it That Way"
 
 <br>
 All commands and output results are appended to the "log.txt" file
+
+test
