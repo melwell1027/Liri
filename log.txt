@@ -1,0 +1,5 @@
+/usr/local/Cellar/node/10.4.1/bin/node,/Users/mattelwell/Desktop/Liri-Bot/liri.js,do-what-it-says
+ Artist: Backstreet Boys
+ Name: I Want It That Way
+ Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=ed5804be238d42359e98b790d6653030
+ Album: The Hits--Chapter One
