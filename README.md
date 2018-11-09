@@ -2,7 +2,9 @@
 
 ## Introduction
 
-LIRI: Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in paramters and gives back data.
+LIRI: Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives back data.
+
+[YouTube](https://youtu.be/x16IFPbfuHA) video of functionality.
 
 <br>
 

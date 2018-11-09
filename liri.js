@@ -1,5 +1,3 @@
-
-
 // Hide API keys
 require("dotenv").config();
 
